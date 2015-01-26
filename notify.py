@@ -47,13 +47,12 @@ def loop_desktop_notification(payload, icon):
     for title, file_list in payload.iteritems():
         if file_list:
             message = ['%s. %s\n' % (i+1, v) for i, v in enumerate(file_list)]
-            message = ''.join(message)
+            message = ''.join(message).rstrip()
             # create desktop notification
             desktop_notification(title=title, message=message, icon=icon)
 
 if __name__ == '__main__':
     title, message, icon, urgency = "Title", '''message''', "/home/hussain/Pictures/interstellar.jpg", "low"
-    for i in range(1, 5):
-        desktop_notification(title=str(i), message=message, icon=icon, urgency=urgency)
+    desktop_notification(title=title, message=message, icon=icon, urgency=urgency)
     
 
