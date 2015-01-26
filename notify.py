@@ -31,9 +31,12 @@ def desktop_notification(**kwargs):
     except Exception as e:
         raise errors.PynotifyError("Error in showing notification. %s" % e)
 
-def loop_desktop_notification(notifications):
-    for notification in notifications:
-        desktop_notification(title=notification.get('title'), message=notification.get('message'))
+def loop_desktop_notification(payload, icon):
+    for title, file_list in payload.iteritems():
+        if file_list:
+            message = ['%s. %s\n' % (i+1, v) for i, v in enumerate(file_list)]
+            message = ''.join(message)
+            desktop_notification(title=title, message=message, icon=icon)
 
 if __name__ == '__main__':
     title, message, icon, urgency = "Title", '''message''', "/home/hussain/Pictures/interstellar.jpg", "low"
