@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+
 import pynotify
 import errors
 
 _app = "svn-notify"
 
+# init pynotify. can be a decorator
 def init_pynotify():
     try:
         pynotify.init(_app)
@@ -11,6 +13,13 @@ def init_pynotify():
         raise errors.PynotifyError("Error in initializing pynotify. %s" % e)
 
 def desktop_notification(**kwargs):
+    '''Use python's pynotify lib to show desktop notification
+    :kwargs - dynamic keyword arguments
+    ::title - title on the notification (default bold)
+    ::message - message that appears below the title
+    ::icon - icon that appears on the left side
+    ::urgency - severity of the notification'''
+
     title, message, icon, timeout, urgency = (kwargs.get(k) \
         for k in ['title', 'message', 'icon', 'timeout', 'urgency']
     )
@@ -32,10 +41,14 @@ def desktop_notification(**kwargs):
         raise errors.PynotifyError("Error in showing notification. %s" % e)
 
 def loop_desktop_notification(payload, icon):
+    '''Show multiple desktop notifications.
+    :payload - a dict. title=key, message=form a message from the payload value
+    :icon - image to be shown on the desktop notification'''
     for title, file_list in payload.iteritems():
         if file_list:
             message = ['%s. %s\n' % (i+1, v) for i, v in enumerate(file_list)]
             message = ''.join(message)
+            # create desktop notification
             desktop_notification(title=title, message=message, icon=icon)
 
 if __name__ == '__main__':
