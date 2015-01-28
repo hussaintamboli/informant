@@ -7,9 +7,9 @@ It evidently lets you know if your working copy is not upto date
 
 Samples
 -------
-![sample output for files with status=M](https://github.com/hussaintamboli/informant/screenshots/sample_output_modified.png?raw=true "Sample output (svn status=M)")
+![sample output for files with status=M](https://github.com/hussaintamboli/informant/tree/master/screenshots/sample_output_modified.png)
 
-![sample output for files with status=?](https://github.com/hussaintamboli/informant/screenshots/sample_output_unversioned.png?raw=true "Sample output (svn status=?)")
+![sample output for files with status=?](https://github.com/hussaintamboli/informant/tree/master/screenshots/sample_output_unversioned.png)
 
 
 Tools used
