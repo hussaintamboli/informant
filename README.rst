@@ -5,6 +5,13 @@ Informant keeps you in the loop while colaborating using *svn*
 It evidently lets you know if your working copy is not upto date
 # It reminds you that your working copy has staged / uncommited changes
 
+Samples
+-------
+![sample output for files with status=M](/screenshots/sample_output_modified.png?raw=true "Sample output (svn status=M)")
+
+![sample output for files with status=?](/screenshots/sample_output_unversioned.png?raw=true "Sample output (svn status=?)")
+
+
 Tools used
 ----------
 - pynotify
