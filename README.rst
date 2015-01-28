@@ -28,5 +28,5 @@ Contribute
 - Tests
 - Report bugs / Fix bugs
 
---
-Hussain (<a href="https://twitter.com/hussain_tamboli" target="_blank">@hussain_tamboli</a>)
+..
+Hussain (@hussain_tamboli)
