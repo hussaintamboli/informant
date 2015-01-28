@@ -1,9 +1,8 @@
 informant
 ---------
 Informant keeps you in the loop while colaborating using *svn*
-# Keep tabs on svn changes being done on the repo. 
-It evidently lets you know if your working copy is not upto date
-# It reminds you that your working copy has staged / uncommited changes
+- Keep tabs on svn changes being done on the repo. It evidently lets you know if your working copy is not upto date
+- It reminds you that your working copy has staged / uncommited changes
 
 Samples
 -------
