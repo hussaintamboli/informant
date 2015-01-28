@@ -6,9 +6,9 @@ Informant keeps you in the loop while colaborating using *svn*
 
 Samples
 -------
-![sample output for files with status=M](https://github.com/hussaintamboli/informant/tree/master/screenshots/sample_output_modified.png)
+![sample output for files with status M](https://github.com/hussaintamboli/informant/tree/master/screenshots/sample_output_modified.png "sample output for files with status M")
 
-![sample output for files with status=?](https://github.com/hussaintamboli/informant/tree/master/screenshots/sample_output_unversioned.png)
+![sample output for files with status ?](https://github.com/hussaintamboli/informant/tree/master/screenshots/sample_output_unversioned.png "sample output for files with status ?")
 
 
 Tools used
