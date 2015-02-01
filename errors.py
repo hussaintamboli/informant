@@ -4,3 +4,6 @@ class PynotifyError(Exception):
 
 class SvnError(Exception):
     pass
+
+class GitError(Exception):
+    pass
