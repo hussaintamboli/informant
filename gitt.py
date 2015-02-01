@@ -5,6 +5,7 @@ from os import path
 import git
 import notify
 import errors
+import validations
 
 class Git:
 
@@ -17,10 +18,13 @@ class Git:
     def __init__(self, repo_path, icon=None):
         self.repo_path = repo_path
         self.icon = icon
+        validations.validate_path(repo_path)
+        # icon is not required per se but the notification 
+        # looks good with it, so making it required
+        validations.validate_path(icon)
  
     def list_status_working_copy(self):
-        '''Track un commited files. Create payload based on their status
-        e.g. modified, added, deleted, etc'''
+        '''Track un tracked files. Create payload based on their status'''
         try:
             repo = git.Repo(self.repo_path)
             untracked_files = {
@@ -29,9 +33,6 @@ class Git:
 	    notify.loop_desktop_notification(untracked_files, self.icon)
         except Exception as e:
             raise errors.GitError(e)
-
-    def repo_status(self):
-        pass
 
 
 if __name__ == '__main__':
