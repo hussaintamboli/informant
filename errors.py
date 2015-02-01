@@ -7,3 +7,10 @@ class SvnError(Exception):
 
 class GitError(Exception):
     pass
+
+class InvalidPathError(Exception):
+    pass
+
+class InvalidUrlError(Exception):
+    pass
+
