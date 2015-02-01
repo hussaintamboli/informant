@@ -40,7 +40,7 @@ def desktop_notification(**kwargs):
     except Exception as e:
         raise errors.PynotifyError("Error in showing notification. %s" % e)
 
-def loop_desktop_notification(payload, icon):
+def loop_desktop_notification(payload, icon=None):
     '''Show multiple desktop notifications.
     :payload - a dict. title=key, message=form a message from the payload value
     :icon - image to be shown on the desktop notification'''
