@@ -10,6 +10,12 @@ Samples
 
 ![sample output for files with status ?](https://github.com/hussaintamboli/informant/raw/master/screenshots/sample_output_unversioned.png "sample output for files with status ?")
 
+Cron Setting
+------------
+PATH=<your path>:/home/hussain/Documents/MyRepos/informant
+PYTHONPATH=<your python path>:/home/hussain/Documents/MyRepos/informant
+0 * * * * DISPLAY=:0.0 svn.py 2> /home/hussain/tmp/svn.log
+0 * * * * DISPLAY=:0.0 gitt.py 2> /home/hussain/tmp/git.log
 
 Tools used
 ----------
