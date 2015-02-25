@@ -10,6 +10,8 @@ Samples
 
 ![sample output for files with status ?](https://github.com/hussaintamboli/informant/raw/master/screenshots/sample_output_unversioned.png "sample output for files with status ?")
 
+![sample output for git?](https://github.com/hussaintamboli/informant/raw/master/screenshots/git_informant_screenshot.png "sample output for git?")
+
 Cron Setting
 ------------
 PATH=<your path>:/home/hussain/Documents/MyRepos/informant
