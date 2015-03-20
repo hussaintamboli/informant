@@ -10,13 +10,16 @@ Samples
 
 ![sample output for files with status ?](https://github.com/hussaintamboli/informant/raw/master/screenshots/sample_output_unversioned.png "sample output for files with status ?")
 
+![sample output for files with status ?](https://github.com/hussaintamboli/informant/raw/master/screenshots/sample_output_python_codebase.png
+ "sample output for files with status U")
+
 ![sample output for git?](https://github.com/hussaintamboli/informant/raw/master/screenshots/git_informant_screenshot.png "sample output for git?")
 
 Cron Setting
 ------------
 PATH=<your path>:/home/hussain/Documents/MyRepos/informant
 PYTHONPATH=<your python path>:/home/hussain/Documents/MyRepos/informant
-0 * * * * DISPLAY=:0.0 svn.py 2> /home/hussain/tmp/svn.log
+0 * * * * DISPLAY=:0.0 svn.py <working_copy_path> <remote_url_of_repo> <icon_path> 2> /home/hussain/tmp/svn.log
 0 * * * * DISPLAY=:0.0 gitt.py 2> /home/hussain/tmp/git.log
 
 Tools used
