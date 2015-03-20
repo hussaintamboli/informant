@@ -75,10 +75,17 @@ class Svn:
 
 
 if __name__ == '__main__':
-    hist = Svn('/test path',
-               '/test path',
-               '/test path')
-    # working
-    hist.list_status_working_copy()
-    # in progress
-    # hist.list_not_upto_date()
+    import sys
+    if len(sys.argv) == 4:
+        working_copy_path, remote_url, icon_path = sys.argv[1:]
+        hist = Svn(sys.argv[1], sys.argv[2], sys.argv[3])
+        # working
+        hist.list_status_working_copy()
+        # in progress
+        # hist.list_not_upto_date()
+    else:
+        sys.exit('''All 3 args required!
+:arg1: path of your working_copy
+:arg2: path of your remote url
+:arg3: path of the icon to be displayed on notification
+-----------------''')
