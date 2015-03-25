@@ -19,6 +19,7 @@ PATH=<your path>:/home/hussain/Documents/MyRepos/informant
 PYTHONPATH=<your python path>:/home/hussain/Documents/MyRepos/informant
 
 0 * * * * DISPLAY=:0.0 svn.py <working_copy_path> <remote_url_of_repo> <icon_path> 2> /home/hussain/tmp/svn.log
+
 0 * * * * DISPLAY=:0.0 gitt.py 2> /home/hussain/tmp/git.log
 
 Tools used
