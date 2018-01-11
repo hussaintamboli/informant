@@ -32,13 +32,6 @@ TODO
 - informant for remote changes in both `svn` and `git`
 - I am thinking of using [dulwich](https://github.com/jelmer/dulwich) instead of GitPython
 
-Contribute
-----------
-- Fork the repository
-- Add yourself to AUTHORS
-- Test. Write unittests. 
-- Restructure
-- Report bugs / Fix bugs
 
-..
-Hussain (@hussain_tamboli)
+## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/hussaintamboli/informant/issues)
+
